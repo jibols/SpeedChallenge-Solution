@@ -16,6 +16,9 @@ pip install http://download.pytorch.org/whl/cu92/torch-0.4.1-cp36-cp36m-linux_x8
 pip install torchvision
 pip install Pillow==5.3.0
 ```
+The video files are stored using GitLab LFS
+
+
 
 ## Deployment
 
