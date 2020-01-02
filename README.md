@@ -1,7 +1,7 @@
 # SpeedChallenge-Solution
 
 
-This is the repository for the solution to speed estimation challenge from Commai
+This is the repository for the solution to car speed estimation challenge from Commai found here:https://github.com/commaai/speedchallenge
 
 ## Getting Started
 
