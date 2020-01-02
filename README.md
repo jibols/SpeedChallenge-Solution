@@ -22,7 +22,7 @@ The video files are stored using GitLab LFS
 ### Model Training and Evaluation
 Steps:
 1: Split the data into 80% training set and 20% validation set to measure the performance after each epoch.
-2. Mean Squared Error (MSE) as a loss function to measure how close the model predicts to the car's speed to the ground truth given in the training video for each input frame.
+2: Mean Squared Error (MSE) as a loss function to measure how close the model predicts to the car's speed to the ground truth given in the training video for each input frame.
 3. Adaptive Moment Estimation (Adam) Algorithm minimize to the loss function.
 
 ### Model Training:
