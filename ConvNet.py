@@ -40,16 +40,16 @@ class ConvNet(nn.Module):
         ----------
         input : tensor
             The tensor representing the image in the batch 
-            
+
         Returns
         ------
         output: 
             This is the CNN model 
         """
-        output = self.layer1(input)
-        output = self.layer2(output)
-        output = self.layer3(output)
-        output = self.layer4(output)
-        output = self.layer5(output)
+        output = self.layer2(self.layer1(input))
+        output = self.layer4(self.layer3(output))
+        output = self.dropout(self.layer5(output))
+        output = self.fc2(self.fc1(output))
+        output = self.fc4(self.fc3(output))
 
         return output
