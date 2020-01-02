@@ -19,9 +19,11 @@ pip install Pillow==5.3.0
 ```
 The video files are stored using GitLab LFS
 
+### Model Training and Evaluation
+Steps:
+1: Split the data into 80% training set and 20% validation set to measure the performance after each epoch.
+2. Mean Squared Error (MSE) as a loss function to measure how close the model predicts to the car's speed to the ground truth given in the training video for each input frame.
+3. Adaptive Moment Estimation (Adam) Algorithm minimize to the loss function.
 
-
-## Deployment
-
-This notebook was built, tested and evaluated  on Google Colab using a TESLA K80 GPU
+### Model Training:
 
