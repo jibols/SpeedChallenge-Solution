@@ -18,7 +18,15 @@ pip install torchvision
 pip install Pillow==5.3.0
 ```
 The video files are stored using GitLab LFS
+### Load and Import Data
+Train Data includes the video and the ground truth of the speed of the car for each frame in the video
+Test Data includes only the video 
 
+#### PreProcessing 
+
+Steps:  
+1. Process video using OpenCV module to extract frames
+2. Use Dense OpticalFlow function to produce image which is measure of the displacement between two consecutive frames.
 ### Model Training and Evaluation
 Steps:  
 1: Split the data into 80% training set and 20% validation set to measure the performance after each epoch.  
