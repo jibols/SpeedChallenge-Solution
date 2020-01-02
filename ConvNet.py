@@ -43,7 +43,7 @@ class ConvNet(nn.Module):
             
         Returns
         ------
-        outout: 
+        output: 
             This is the CNN model 
         """
         output = self.layer1(input)
